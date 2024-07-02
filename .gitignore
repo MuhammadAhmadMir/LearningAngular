@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/API/DatingApp.API/bin/Debug/net8.0
+/src/.vs
+/.vs
+/src/API/DatingApp.API/obj
+/src/BuildingBlocks/bin/Debug/net8.0
+/src/BuildingBlocks/obj
