@@ -5,13 +5,15 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CBF8594A-FC7F-4943-BF92-149C2332E60B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0DA0F379-93BE-4215-A034-083EB0019B50}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{0DA0F379-93BE-4215-A034-083EB0019B50}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{6FE36D42-A24D-4883-A8E1-73B663C33D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{3A01D779-0295-4F63-BE0B-98AA48B4650C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{3A01D779-0295-4F63-BE0B-98AA48B4650C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingApp.API", "API\DatingApp.API\DatingApp.API.csproj", "{9834E380-2520-424B-8FCB-89EFF4A0CE9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingApp.API", "API\DatingApp.API\DatingApp.API.csproj", "{9834E380-2520-424B-8FCB-89EFF4A0CE9D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "DatingApp", "Client\DatingApp\DatingApp.esproj", "{4306234B-55E6-46CE-814F-470EAF5AD8B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{9834E380-2520-424B-8FCB-89EFF4A0CE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9834E380-2520-424B-8FCB-89EFF4A0CE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9834E380-2520-424B-8FCB-89EFF4A0CE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3A01D779-0295-4F63-BE0B-98AA48B4650C} = {6FE36D42-A24D-4883-A8E1-73B663C33D94}
 		{9834E380-2520-424B-8FCB-89EFF4A0CE9D} = {CBF8594A-FC7F-4943-BF92-149C2332E60B}
+		{4306234B-55E6-46CE-814F-470EAF5AD8B8} = {0DA0F379-93BE-4215-A034-083EB0019B50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2CD87BE-41A5-48C1-B914-2B424B0D4359}

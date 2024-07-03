@@ -27,10 +27,13 @@ builder.Services.AddDbContext<DataContext>(opt =>
 builder.Services.AddScoped(typeof(IDataProviderBase<>), typeof(DataProviderBase<>));
 builder.Services.AddAttributedServices(Assembly.GetExecutingAssembly());
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 
 // Configure the HTTP request pipeline
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 app.MapCarter();
 app.UseExceptionHandler(options => { });
 app.UseHealthChecks("/health",
