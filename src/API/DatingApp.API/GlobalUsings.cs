@@ -6,5 +6,7 @@ global using DatingApp.API.Data;
 global using Microsoft.EntityFrameworkCore;
 global using MediatR;
 global using BuildingBlocks.CQRS;
-global using DatingApp.API.Entities;
 global using Mapster;
+global using DatingApp.API.DTOs;
+global using Microsoft.AspNetCore.Identity;
+global using DatingApp.API.Repositories;

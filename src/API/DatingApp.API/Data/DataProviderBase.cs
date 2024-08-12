@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace DatingApp.API.Data
 {
-    public class DataProviderBase<T>(DataContext context)
+    public class DataProviderBase<T>(ApplicationDbContext context)
         : IDataProviderBase<T> 
         where T : class
     {
-        private readonly DataContext _context = context;
+        private readonly ApplicationDbContext _context = context;
         private readonly DbSet<T> _dbSet = context.Set<T>();
 
         public async Task<IEnumerable<T>> GetAllAsync() => await _dbSet.ToListAsync();
